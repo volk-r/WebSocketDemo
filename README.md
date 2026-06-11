@@ -50,16 +50,16 @@ WebSocket/
 ## Как это работает
 
 ```
-┌─────────────┐     wss://echo.websocket.org     ┌──────────────┐
-│ ContentView │ ◄────────────────────────────►   │ Echo-сервер  │
-└──────┬──────┘                                  └──────────────┘
+┌─────────────┐     wss://echo.websocket.org   ┌─────────────┐
+│ ContentView │ ◄────────────────────────────► │ Echo-сервер │
+└──────┬──────┘                                └─────────────┘
        │
        ▼
 ┌──────────────────┐
 │ WebSocketManager │
-│  connect()       │──► URLSessionWebSocketTask.resume()
-│  sendMessage()   │──► webSocketTask.send(.string)
-│  receiveMessages │──► рекурсивный receive { ... }
+│  connect()       │ ──► URLSessionWebSocketTask.resume()
+│  sendMessage()   │ ──► webSocketTask.send(.string)
+│  receiveMessages │ ──► рекурсивный receive { ... }
 └──────────────────┘
 ```
 
