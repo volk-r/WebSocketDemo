@@ -6,7 +6,7 @@
 
 Экран чата с историей сообщений, полем ввода и кнопкой отправки:
 
-![Экран чата](Screenshots/chat.png)
+<img width="315" height="625" alt="Экран чата" src="Screenshots/chat.png">
 
 ## Возможности
 
